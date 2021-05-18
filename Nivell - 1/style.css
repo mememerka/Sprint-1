@@ -1,0 +1,106 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.principal{
+    display: flex;
+    flex-flow: column nowrap;   
+}
+
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: #c8c2bc;
+        flex-flow: row nowrap;
+        display: flex;
+    }
+        .logo{
+            background: #f2dac3;
+            flex: 1 1 auto;
+        }
+        .nav{
+            background: #f2dac3;
+            flex: 5 1 auto;
+        }
+        .social{
+            background: #f2dac3;
+            flex: 1 1 auto;
+        }
+    .text{
+        background: #766161;
+    }
+        h1{
+            background: #87a7b3;
+        }
+
+.section{
+    background: #000;
+    display: flex;
+    flex-flow: row nowrap;
+}
+    .articles{
+        background: #511281;
+        display: flex;
+        flex: 2 1 auto;
+        flex-flow: row wrap;
+    }
+        .article{
+            background: #4ca1a3;
+            flex: 1 1 40%;
+        }
+        .navegacio{
+            background: #a5e1ad;
+            flex: 1 1 100%;
+        }
+    .aside{
+        background: #4aa96c;
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: column nowrap;
+    }
+        .lateral{
+            background: #9fe6a0;
+        }
+
+.footer{
+    background: #000;
+}
+    .lownav{
+        background: yellow;
+    }
+
+/*tablet*/
+@media (min-width: 480px) and (max-width: 1024px){
+    .section{
+        flex-direction: column;
+    }
+}
+
+/*mobil*/
+@media (min-width: 320px) and (max-width: 480px){
+    .menu{
+        flex-direction: column;
+        height: auto;
+        flex-flow: row wrap;
+    }
+        .logo{
+            flex: 100%;
+        }
+        .nav{
+            flex: 100%;
+        }
+        .social{
+            flex: 100%;
+        }
+    .articles{
+        flex-direction: column;
+    }
+    .section{
+        flex-direction: column;
+    }
+
+}

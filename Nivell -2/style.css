@@ -11,7 +11,8 @@ a{
 
 .principal{
     display: flex;
-    flex-flow: column nowrap;   
+    flex-flow: column nowrap;
+    width: 1400px;   
 }
 .principal a:hover{
     color: tomato;
@@ -145,7 +146,7 @@ a{
             color: thistle;
         }
 /*tablet*/
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 576px) and (max-width: 1024px){
     .section{
         flex-direction: column;
     }
@@ -159,7 +160,7 @@ a{
 }
 
 /*mobil*/
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 576px){
     .menu{
         flex-direction: column;
         height: auto;
